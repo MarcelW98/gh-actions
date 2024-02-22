@@ -8,7 +8,7 @@ jobs:
       - name: Import Secrets
         uses: hashicorp/vault-action@v2
         with:
-          url: https://hcvault.app.corpintra.net/ui/vault/secrets?namespace=vds:8200
+          url: https://hcvault.app.corpintra.net?namespace=vds:8200
           tlsSkipVerify: true
           token: \${{ secrets.VAULT_TOKEN }}
           secrets: |
