@@ -12,4 +12,4 @@ jobs:
           tlsSkipVerify: true
           token: \${{ secrets.VAULT_TOKEN }}
           secrets: |
-            secret/data/ci app_secret
+            secret/data/vds/test test
